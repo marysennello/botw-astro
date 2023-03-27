@@ -39,7 +39,7 @@
           <nuxt-link to="/champion-elements">Hyrule's Champions</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/grid-page">Grid Page</nuxt-link>
+          <nuxt-link to="/monster-astro">Monster Astrology</nuxt-link>
         </li>
       </ul>
     </div>
