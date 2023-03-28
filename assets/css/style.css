@@ -579,10 +579,12 @@ nav .container .nav-item:hover {
   margin: .5rem;
   background-color: #36454f;
   border-radius: 40px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  /*flex-wrap: wrap;*/
   justify-content: center;
-  align-content: center;
+  align-content: stretch;
+  justify-items: center;
+  align-items: center;
   box-shadow: 0 15px 6px rgba(0, 0, 0, .01), 0 8px 5px rgba(0, 0, 0, .05), 0 4px 4px rgba(0, 0, 0, .08), 0 1px 2px rgba(0, 0, 0, .09), 0 0 0 rgba(0, 0, 0, .09)
 }
 
@@ -592,12 +594,20 @@ nav .container .nav-item:hover {
 
 .main .container .row .astro-grid h3 {
   color: #86a5a9;
-  padding: .5rem 1em;
+  padding: .5rem 0 0 0;
 }
 
 .main .container .row .astro-grid h4 {
   color: #fdffe0;
-  padding: .5rem 1rem;
+  /* padding: .5rem 1rem; */
+  font-size: 1em;
+}
+
+.main .container .row .astro-grid p {
+  color: #fdffe0;
+  margin: 1em 3em;
+  font-family: "Inter", sans-serif;
+  /* padding: .5rem 1rem; */
   font-size: 1em;
 }
 
@@ -606,6 +616,7 @@ nav .container .nav-item:hover {
   padding: 0 .5rem 1rem .5rem;
   border-radius: 40px
 }
+
 
 @media screen and (min-device-width : 768px)and (max-device-width : 1024px) {
   .main .container div.col-md-2 {
