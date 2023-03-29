@@ -7,6 +7,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif:wght@400;700&family=Rufina:wght@700&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+      <script src="assets/js/index.js"></script>
     </head>
 
   <!--header and nav for every page-->
@@ -30,8 +31,12 @@
           <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/about">About</nuxt-link>
+          <nuxt-link to="/equipment">Equipment List</nuxt-link>
         </li>
+        <!-- insert page for the big 3 page when completed -->
+        <!-- <li class="nav-item">
+          <nuxt-link to="/big3">Big Three</nuxt-link>
+        </li> -->
         <li class="nav-item">
           <nuxt-link to="/hyrule-regions">Regions of Hyrule</nuxt-link>
         </li>
