@@ -14,17 +14,16 @@
 
       <h3 class="text-capitalize">{{ item.name }}</h3>
 
-      <p>{{item.description}}</p>
       <!-- POPUP CONTENT: ALL ITEMS FROM BEFORE PLUS OTHER STATS -->
       <div class="popup" v-if="isHidden">
         <div class="popup-inner">
-         
-            <img 
-            :src="item.image" 
-            :alt="item.name" 
-            class="card__img"
-            >
-
+            <div class="popup-img">
+              <img 
+              :src="item.image" 
+              :alt="item.name" 
+              class="card__img img-fluid"
+              >
+          </div>
           <!-- div containing everythind besides the image -->
           <div class="moreinfo">
             <h3 class="text-capitalize">{{ item.name }}</h3>
@@ -93,16 +92,23 @@ export default {
   max-width: 275px;
 }
 
-.commonlocations {
-  list-style-image: url(assets/imgs-etc/botw-star-micro.png);
-  color: #fdffe0;
-}
 .bold {
   font-weight: 700;
   font-size: 1em;
 }
+
+.commonlocations {
+  list-style-image: url(assets/imgs-etc/botw-star-micro.png);
+  color: #fdffe0;
+  }
+ul {
+  padding-left: 3em;
+}
+
 li {
   font-size: 0.9em;
+  margin-left: 2em;
+  
 }
 
 .popup {
@@ -123,8 +129,9 @@ li {
 
 .popup-inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 .popup .popup-inner {
@@ -133,7 +140,13 @@ li {
   border-radius: 40px;
   border: 1px solid #92c582;
 }
+
+.popup-img {
+  overflow: hidden;
+}
+
 .moreinfo {
-  width: 35%;
+  min-width: 40%;
+  max-width: 60%;
 }
 </style>
