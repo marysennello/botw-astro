@@ -6,20 +6,21 @@
     <main class="main">
       <section>
         <h2 class="heading">Weapons of Hyrule</h2>
-        <h3>Wow look I used an API to pull in all the weapons... now I need to figure out why they appear in a random order when the page is refreshed, and see if I can stop that from happening. </h3>
+        <h3>Wow look I used an API to pull in all the weapons! </h3>
       </section>
       <section class="container" v-if="equipment">
         <div class="container">
           <div class="row">
-
-            <card 
-              v-for="item of equipment.data"
-              :key="item.id"
-              :item="item"
-              >
-              <card />
-            </card>
-
+            
+              <card 
+                v-for="item of equipment.data"
+                :key="item.id"
+                :item="item" >
+                <card />
+                
+              </card>
+             
+          
           </div>
         </div>
       </section>
@@ -37,13 +38,15 @@ import Card from '~/components/Card.vue'
 
 export default {
   components: {
-    Card
+    Card ,    
   },
+  
   data() {
     return {
       loading: true,
       equipment: null,
-      errored: false
+      errored: false,
+      
     }
   },
   mounted () {
