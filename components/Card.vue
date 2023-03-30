@@ -13,6 +13,7 @@
       >
 
       <h3 class="text-capitalize">{{ item.name }}</h3>
+      <br>
 
       <!-- POPUP CONTENT: ALL ITEMS FROM BEFORE PLUS OTHER STATS -->
       <div class="popup" v-if="isHidden">

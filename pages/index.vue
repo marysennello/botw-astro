@@ -1,13 +1,9 @@
 <template>
   <div id="app">
-    <!--head, header and nav-->
-    <HeaderNav />
 
   <!--VIEWS ROUTED IN HERE-->
     <HomeView />
 
-  <!--footer for every page-->
-    <FooterSection />
   </div>
 </template>
 

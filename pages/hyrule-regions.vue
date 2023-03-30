@@ -1,8 +1,5 @@
 <template>
   <div class="accordion-page">
-
-    <HeaderNav />
-
     <main class="main">
       <section>
         <h2>Regions and Subregions of Hyrule</h2>
@@ -37,9 +34,8 @@
             </div> <!--end of collapsing div-->
           </span> <!--end of span for each-->
       </div>
+      <!-- end of accordion -->
     </main>
-
-    <FooterSection />
   </div>  
 </template>
 

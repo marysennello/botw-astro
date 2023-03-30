@@ -1,8 +1,5 @@
 <template>
-  <div class="accordion-page">
-
-    <HeaderNav />
-
+  <div class="image-page">
     <main class="main">
       <section>
         <h2>Hyrule's Champions and the Elements</h2>
@@ -23,8 +20,6 @@
           </ChampionPage>
       </section>
     </main>
-   
-    <FooterSection />
   </div>  
 </template>
 

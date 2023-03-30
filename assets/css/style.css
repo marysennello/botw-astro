@@ -572,7 +572,8 @@ nav .container .nav-item:hover {
 }
 
 .main .container .row .col, .main .container .row .col-2 {
-  border: 1px solid #fdffe0
+  border: 1px solid #fdffe0;
+
 }
 
 .main .container .row .astro-grid {
@@ -589,7 +590,8 @@ nav .container .nav-item:hover {
 }
 
 .main .container .row .astro-grid h2 {
-  color: #92c582
+  color: #92c582;
+  margin-top: 1em;
 }
 
 .main .container .row .astro-grid h3 {

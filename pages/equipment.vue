@@ -1,14 +1,12 @@
 <template>
   <div class="wrapper">
-
-   <HeaderNav />
-
     <main class="main">
       <section>
         <h2 class="heading">Equipment of Hyrule</h2>
         <h3>Wow look I used an API to pull in all items of equipment! </h3>
         <h3>Click a piece of equipment to learn more about it. </h3>
       </section>
+      <!-- equipment items -->
       <section class="container" v-if="equipment">
         <div class="container">
           <div class="row">
@@ -20,16 +18,12 @@
                 <card />
                 
               </card>
-             
-          
+                       
           </div>
         </div>
       </section>
+      <!-- end equipment section -->
     </main>
-
-    <FooterSection />
-
-   
   </div>
 </template>
 
