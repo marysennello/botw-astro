@@ -619,6 +619,10 @@ nav .container .nav-item:hover {
   border-radius: 40px
 }
 
+.astro-grid:hover {
+  cursor: zoom-in;
+}
+
 
 @media screen and (min-device-width : 768px)and (max-device-width : 1024px) {
   .main .container div.col-md-2 {

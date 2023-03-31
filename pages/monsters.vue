@@ -1,8 +1,6 @@
 <template>
   <div class="wrapper">
 
-   <HeaderNav />
-
     <main class="main">
       <section>
         <h2 class="heading">Monsters of Hyrule</h2>
@@ -26,9 +24,6 @@
         </div>
       </section>
     </main>
-
-    <FooterSection />
-
    
   </div>
 </template>
