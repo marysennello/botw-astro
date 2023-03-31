@@ -620,7 +620,7 @@ nav .container .nav-item:hover {
 }
 
 .astro-grid:hover {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 
