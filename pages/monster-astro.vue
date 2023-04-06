@@ -55,6 +55,7 @@ export default {
       loading: true,
       monsters: null,
       errored: false,
+      title: 'Astrology',
       //signs
       signs:
         [
@@ -168,16 +169,29 @@ export default {
           }
         ]
       }
-    },
+    }, //end data
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'Astrology Page',
+            name: 'The Legend of Zelda: Breath of the Wild AstrologyPage',
+            content: 'the signs as monsters'
+          }
+        ]
+      }
+    }, //end head
     mounted () {
-  axios
-    .get('https://botw-compendium.herokuapp.com/api/v2/category/monsters')
-    .then(response => this.monsters = response.data)
-    .catch(error => {
-      this.errored = true
-    })
-    .finally(() => this.loading = false)
-  }
+    axios
+      .get('https://botw-compendium.herokuapp.com/api/v2/category/monsters')
+      .then(response => this.monsters = response.data)
+      .catch(error => {
+        this.errored = true
+      })
+      .finally(() => this.loading = false)
+    } //end mounted
      
-  }
+  }//end export
   </script>

@@ -5,7 +5,7 @@
     <header id="header">
       <div class="header-container">
         <div class="header">
-          <h1 class="text-center">Hyrulian Astrology</h1>
+          <h1 class="text-center">The Legend of Zelda: Breath of the Wild x Astrology</h1>
         </div>
       </div>
     </header>

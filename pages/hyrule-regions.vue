@@ -40,10 +40,12 @@
 </template>
 
 <script>
+
 export default {
+  
   data (){
     return {
-
+      title: 'Breath of the Wild Champions and their Elements',
       //regions
       regions:
         [
@@ -129,6 +131,19 @@ export default {
             }
         ]
     }   //end return
- }//end data
+ },//end data
+ head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'Breath of the Wild Champions and their Elements',
+            name: 'Breath of the Wild Champions and their Elements',
+            content: 'Breath of the Wild Champions and their Elements'
+          }
+        ]
+      }
+    } //end head
 }
 </script>

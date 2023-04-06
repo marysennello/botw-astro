@@ -42,9 +42,23 @@ export default {
       loading: true,
       monsters: null,
       errored: false,
+      title: 'Monsters',
       
     }
   },
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'Monsters Page',
+            name: 'The Legend of Zelda: Breath of the Wild Monsters Page',
+            content: 'list of all monsters'
+          }
+        ]
+      }
+    },
   mounted () {
   axios
     .get('https://botw-compendium.herokuapp.com/api/v2/category/monsters')

@@ -41,9 +41,23 @@ export default {
       loading: true,
       equipment: null,
       errored: false,
+      title: 'Equipment'
       
     }
   },
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'Equipment Page',
+            name: 'The Legend of Zelda: Breath of the Wild Equipment Page',
+            content: 'all equipment'
+          }
+        ]
+      }
+    },
   mounted () {
   axios
     .get('https://botw-compendium.herokuapp.com/api/v2/category/equipment')
